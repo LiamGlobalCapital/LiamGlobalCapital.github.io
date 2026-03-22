@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Global Capital</title>
+    <meta name="description" content="Liam Global Capital is a private conduit for global capital and long-term strategic opportunities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-text: #1a1a1a;
+            --color-text-secondary: #6b6b6b;
+            --color-text-tertiary: #999999;
+            --color-bg: #ffffff;
+            --color-link: #1a1a1a;
+            --color-rule: #e0e0e0;
+            --font-primary: 'EB Garamond', 'Times New Roman', Georgia, serif;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 640px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .logo {
+            margin-bottom: 2rem;
+        }
+
+        .logo img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .wordmark {
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: var(--color-text);
+            margin-bottom: 4.5rem;
+        }
+
+        .description {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.75;
+            color: var(--color-text);
+            margin-bottom: 3.5rem;
+        }
+
+        .disclaimer {
+            font-size: 0.9375rem;
+            font-style: italic;
+            color: var(--color-text-secondary);
+            margin-bottom: 3.5rem;
+            line-height: 1.6;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background-color: var(--color-rule);
+            margin: 0 auto 3rem;
+        }
+
+        .portfolio-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--color-text-tertiary);
+            margin-bottom: 2rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0;
+            margin-bottom: 3.5rem;
+        }
+
+        .portfolio-grid span {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            padding: 0.6rem 0.25rem;
+            line-height: 1.4;
+            letter-spacing: 0.01em;
+        }
+
+        .contact-label {
+            font-size: 0.9375rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .contact-email {
+            font-size: 1.0625rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .contact-email a {
+            color: var(--color-link);
+            text-decoration: none;
+            border-bottom: 1px solid #c8c8c8;
+            padding-bottom: 1px;
+            transition: border-color 0.2s ease;
+        }
+
+        .contact-email a:hover {
+            border-bottom-color: var(--color-text);
+        }
+
+        .legal {
+            font-size: 0.8125rem;
+            color: var(--color-text-tertiary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .copyright {
+            font-size: 0.75rem;
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 540px) {
+            body {
+                padding: 3rem 1.5rem;
+            }
+
+            .wordmark {
+                font-size: 0.9375rem;
+                letter-spacing: 0.28em;
+                margin-bottom: 3.5rem;
+            }
+
+            .description {
+                font-size: 1.125rem;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .portfolio-grid span {
+                font-size: 0.8125rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <img src="data:image/png;base64,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" width="56" height="56" alt="Liam Global Capital">
+        </div>
+
+        <div class="wordmark">Liam Global Capital</div>
+
+        <p class="description">
+            Liam Global Capital is a private conduit for global capital and long-term strategic opportunities.
+        </p>
+
+        <p class="disclaimer">
+            Liam Global Capital does not solicit or accept retail investors.
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="portfolio-label">Select Investments</p>
+
+        <div class="portfolio-grid">
+            <span>OpenAI</span>
+            <span>Anthropic</span>
+            <span>SpaceX</span>
+            <span>Databricks</span>
+            <span>Anduril Industries</span>
+            <span>Epic Games</span>
+            <span>Grab</span>
+            <span>Northrop Grumman</span>
+            <span>ServiceTitan</span>
+            <span>Ramp</span>
+            <span>Vanta</span>
+            <span>Intercom</span>
+            <span>AnyScale</span>
+            <span>dbt Labs</span>
+            <span>Handshake</span>
+            <span>HighTouch</span>
+            <span>Immuta</span>
+            <span>Omni</span>
+            <span>Visual Layer</span>
+            <span>Inspectify</span>
+            <span>Jetty</span>
+            <span>Risotto</span>
+            <span>Ditto</span>
+            <span>Theory Ventures</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="contact-label">For inquiries please contact:</p>
+        <p class="contact-email">
+            <a href="mailto:info@liamglobalcapital.com">info@liamglobalcapital.com</a>
+        </p>
+
+        <p class="legal">
+            The registered office of Liam Global Capital is in the United States.
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Liam Global Capital LLC. All rights reserved.
+        </p>
+
+    </div>
+</body>
+</html>
